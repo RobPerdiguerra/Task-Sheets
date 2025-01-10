@@ -1,6 +1,8 @@
-public class TaskSheet122 {
-    static class Student {
-        private String firstName;
+package TaskSheets;
+
+
+    class Student {
+        private String firstName;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
         private String lastName;
 
         public Student(String firstName, String lastName) {
@@ -11,12 +13,15 @@ public class TaskSheet122 {
             System.out.println(firstName+" "+lastName);
         }
     }
-
-    public static void main(String[] args) {
-        Student studentName = new Student("Angel", "Salangsang");
-
-        studentName.printfullName();
-
-    }
-
+public class TaskSheet122 {
+        public static void main(String[] args) {
+            Student[] students = new Student[] {
+                    new Student("Morgan", "Freeman"),
+                    new Student("Brad", "Pitt"),
+                    new Student("Kevin", "Spacey"),
+            };
+            for (Student s : students) {
+                s.printfullName();
+            }
+}
 }
